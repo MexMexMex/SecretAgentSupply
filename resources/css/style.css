@@ -1,0 +1,197 @@
+body {
+  font-size: 18px;
+  font-family: helvetica;
+}
+header {
+  background-color: black;
+}
+header .mainhead {
+  display: flex;
+  align-items: center;
+}
+.mainhead {
+  width: 960px;
+  margin: 0 auto;
+}
+.mainhead img {
+  height: 1.5rem;
+  margin: 0.66rem 1rem 0.66rem 0.5rem;
+}
+.mainhead h1 {
+  font-size: 1rem;
+  font-family: helvetica;
+  margin: 0.66rem 0 0.66rem 0;
+  color: white;
+}
+.cover {
+  display: flex;
+  background-image: url("./../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 25rem;
+  align-items: center;
+}
+.textcontain {
+  width: 960px;
+  margin: 0 auto;
+}
+.covertext {
+  background: black;
+  width: 20rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 2rem 3rem;
+  top: 9rem;
+}
+.covertext h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+.covertext h2 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.navcontain {
+  width: 960px;
+  margin: 0 auto;
+}
+nav {
+  background-color: firebrick;
+}
+.navmenu {
+  padding: 0.75rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  color: white;
+}
+.maincontain {
+  width: 960px;
+  margin: 0 auto;
+}
+.sampleitems {
+  display: flex;
+  margin: 3rem 0;
+  justify-content: space-between;
+}
+.item-image {
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  border: 4px solid black;
+}
+
+.item {
+  width: 30%;
+  display: block;
+}
+
+.item-image img {
+  max-width: 9rem;
+  height: auto;
+}
+.item-name {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+.business-info {
+  margin:  3em 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  width: 35%;
+}
+.title {
+  display: block;
+  background: black;
+  padding: 1em 2em;
+  color: white;
+}
+footer {
+  margin-top: 4em;
+  padding: 5em 0;
+  height: 5rem;
+  background: black;
+}
+.copy {
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  color: white;
+}
+
+.navsmall {
+    padding: 0.75rem 0rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .navmenu {
+    display: none;
+  }
+  .navsmall {
+    display: flex;
+  }
+  .item {
+    width: 47%;
+  }
+  .item.glasses {
+    display: none;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .maincontain {
+    width: 470px;
+    margin: 0 auto;
+  }
+  .item {
+    width: 90%;
+    margin: auto;
+  }
+  .item.watch {
+    display: none;
+  }
+  .item.glasses {
+    display: none;
+  }
+  .info {
+  width: 90%;
+  margin: 0.5rem auto;
+  display: block;
+  }
+  .business-info {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .cover {
+    height: 15em;
+  }
+  .covertext {
+    width: 100%;
+    padding: 1em 2em;
+    margin-top: 10em;
+  }
+  .covertext h2 {
+    font-size: 0.77rem;
+  }
+  .covertext h1 {
+    font-size: 1rem;
+  }
+}
